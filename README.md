@@ -198,9 +198,9 @@ The videos from the front-facing cameras were generated using the `video.py` scr
 
 Some images from the test run are included below: 
 
-![Testing on Track 1](run1/2020_05_28_17_13_33_533.jpg "Testing in Autonomous Mode on Track 1")
+![Testing on Track 1](screenshots/2020_05_28_17_13_33_533.jpg "Testing in Autonomous Mode on Track 1")
 
-![Testing on Track 1](run1/2020_05_28_17_19_09_727.jpg "Testing in Autonomous Mode on Track 1")
+![Testing on Track 1](screenshots/2020_05_28_17_19_09_727.jpg "Testing in Autonomous Mode on Track 1")
 
 The screen-recording of the Simulator running in Autonomous Mode corresponding to the results seen in `video1.mp4` can be viewed on YouTube by clicking the image below:
 
