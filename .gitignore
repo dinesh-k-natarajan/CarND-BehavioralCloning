@@ -8,3 +8,6 @@ AutonomousMode_Track1.mp4
 
 # Simulator folder
 beta_simulator_windows/
+
+# VS Code files
+.vscode/
