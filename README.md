@@ -190,9 +190,12 @@ Due to the dropout layers to avoid overfitting to the training set, it is observ
 
 ## **5. Testing the trained model in the Simulator**
 
-The `drive.py` script is used to run the Autonomous Mode of the Simulator based on the trained model. It is observed that the vehicle remains inside the drivable portion of the track, without swerving off-track. Thus, the goals of this project were achieved.
+The `drive.py` script is used to run the Autonomous Mode of the Simulator based on the trained model in Track 1. It is observed that the vehicle remains inside the drivable portion of the track, without swerving off-track. Thus, the goals of this project were achieved.
 
-The videos from the front-facing cameras were generated using the `video.py` script and are included as `video1.mp4` and `video2.mp4`. 
+The videos from the front-facing cameras were generated using the `video.py` script and are included as:
+
+* `video1.mp4` based on the data in `run1/` directory
+* `video2.mp4` based on the data in `track1/` directory 
 
 Some images from the test run are included below: 
 
