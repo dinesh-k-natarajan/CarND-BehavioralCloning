@@ -19,9 +19,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: data/IMG/left_2016_12_01_13_43_08_639.jpg "Left Image"
-[image2]: data/IMG/center_2016_12_01_13_43_08_639.jpg "Center Image"
-[image3]: data/IMG/right_2016_12_01_13_43_08_639.jpg "Right Image"
+[image1]: screenshots/left_2016_12_01_13_43_08_639.jpg "Left Image"
+[image2]: screenshots/center_2016_12_01_13_43_08_639.jpg "Center Image"
+[image3]: screenshots/right_2016_12_01_13_43_08_639.jpg "Right Image"
 
 ---  
 ### **Table of Contents:**
