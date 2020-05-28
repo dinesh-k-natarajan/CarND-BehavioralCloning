@@ -148,30 +148,30 @@ The Model Arhcitecture is based on NVIDIA's [End-to-End Learning for Self-Drivin
 
 The Model Architecture from their paper is shown in the image below:
 
-![Model Architecture](screenshots/modelarchitecture.png "Model Architecture")
+![Model Architecture](screenshots/modelarchitecture.PNG "Model Architecture")
 
 The output layer contains one neuron corresponding to the steering angle control. The model was modified in order to account for overfitting to the training set and can be summarized in the table below: 
 
 
 | Layer                   |    Output Shape     | Parameters | Description                                                                    |
 | :---------------------- | :-----------------: | :--------: | :----------------------------------------------------------------------------- |
-| Lambda layer            | (None, 160, 320, 3) |     0      | Normalizes the pixels values to -1, 1 and centers them around the mean of zero |
-| Cropping2D              | (None, 90, 320, 3)  |     0      | Crops the images to discard background and hood details                        |
-| Convolutional Layer 1   | (None, 43, 158, 24) |    1824    | Kernel = 5x5, Strides = 2x2, `relu` activation                                 |
-| Dropout 1               | (None, 43, 158, 24) |     0      | Rate = 0.25                                                                    |
-| Convolutional Layer 2   | (None, 20, 77, 36)  |   21636    | Kernel = 5x5, Strides = 2x2, `relu` activation                                 |
-| Dropout 2               | (None, 20, 77, 36)  |     0      | Rate = 0.25                                                                    |
-| Convolutional Layer 3   |  (None, 8, 37, 48)  |   43248    | Kernel = 5x5, Strides = 2x2, `relu` activation                                 |
-| Dropout 3               |  (None, 8, 37, 48)  |     0      | Rate = 0.25                                                                    |
-| Convolutional Layer 4   |  (None, 6, 35, 64)  |   27712    | Kernel = 3x3, Strides = 1x1, `relu` activation                                 |
-| Dropout 4               |  (None, 6, 35, 64)  |     0      | Rate = 0.25                                                                    |
-| Convolutional Layer 5   |  (None, 4, 33, 64)  |   36928    | Kernel = 3x3, Strides = 1x1, `relu` activation                                 |
-| Dropout 5               |  (None, 4, 33, 64)  |     0      | Rate = 0.50                                                                    |
-| Flatten                 |    (None, 8448)     |     0      | Flattens to a 1D vector                                                        |
-| Fully Connected Layer 1 |     (None, 100)     |   844900   | `relu` activation                                                              |
-| Fully Connected Layer 2 |     (None, 50)      |    5050    | `relu` activation                                                              |
-| Fully Connected Layer 3 |     (None, 10)      |    510     | `relu` activation                                                              |
-| Fully Connected Layer 4 |      (None, 1)      |     11     | `relu` activation                                                              |
+| Lambda layer            | (160, 320, 3) |     0      | Normalizes the pixels values to (-1, 1) and centers them around the mean of zero |
+| Cropping2D              | (90, 320, 3)  |     0      | Crops the images to discard background and hood details                        |
+| Convolutional Layer 1   | (43, 158, 24) |    1824    | Kernel = 5x5, Strides = 2x2, `relu` activation                                 |
+| Dropout 1               | (43, 158, 24) |     0      | Rate = 0.25                                                                    |
+| Convolutional Layer 2   | (20, 77, 36)  |   21636    | Kernel = 5x5, Strides = 2x2, `relu` activation                                 |
+| Dropout 2               | (20, 77, 36)  |     0      | Rate = 0.25                                                                    |
+| Convolutional Layer 3   |  (8, 37, 48)  |   43248    | Kernel = 5x5, Strides = 2x2, `relu` activation                                 |
+| Dropout 3               |  (8, 37, 48)  |     0      | Rate = 0.25                                                                    |
+| Convolutional Layer 4   |  (6, 35, 64)  |   27712    | Kernel = 3x3, Strides = 1x1, `relu` activation                                 |
+| Dropout 4               |  (6, 35, 64)  |     0      | Rate = 0.25                                                                    |
+| Convolutional Layer 5   |  (4, 33, 64)  |   36928    | Kernel = 3x3, Strides = 1x1, `relu` activation                                 |
+| Dropout 5               |  (4, 33, 64)  |     0      | Rate = 0.50                                                                    |
+| Flatten                 |    (8448)     |     0      | Flattens to a 1D vector                                                        |
+| Fully Connected Layer 1 |     (100)     |   844900   | `relu` activation                                                              |
+| Fully Connected Layer 2 |     (50)      |    5050    | `relu` activation                                                              |
+| Fully Connected Layer 3 |     (10)      |    510     | `relu` activation                                                              |
+| Fully Connected Layer 4 |      (1)      |     11     | `relu` activation                                                              |
 
 
 * Total parameters: 981,819
