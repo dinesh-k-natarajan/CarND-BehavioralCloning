@@ -203,9 +203,9 @@ Some images from the test run are included below:
 
 ![Testing on Track 1](run1/2020_05_28_17_19_09_727.jpg "Testing in Autonomous Mode on Track 1")
 
-The screen-recording of the Simulator running in Autonomous Mode corresponding to the results seen in `video1.mp4` can be viewed on YouTube under [this link](https://www.youtube.com/watch?v=N6GlktZY3Xs). 
+The screen-recording of the Simulator running in Autonomous Mode corresponding to the results seen in `video1.mp4` can be viewed on YouTube by clicking the image below:
 
-![Testing on Track 1](screenshots/track1testing.png "Testing in Autonomous Mode on Track 1")
+[![Testing on Track 1](screenshots/track1testing.png "Testing in Autonomous Mode on Track 1")](https://www.youtube.com/watch?v=N6GlktZY3Xs)
 
 ## **Further Improvements**
 * Extending the dataset to include driving data from Track 2 to help the model generalize better.
