@@ -45,7 +45,6 @@ The goals / steps of this project are the following:
 
 ### **Important Contents of the repository**
 
-* `data/`     - Directory containing the recorded driving behavior using the simulator in training model
 * `clone.py`  - Script for implementation and training of the model using Keras
 * `model.h5`  - Trained model
 * `drive.py`  - Script for driving the car autonomously in the simulator using the trained model
@@ -75,7 +74,7 @@ The goals / steps of this project are the following:
 ## **1. Dataset**
 ### **1.1 About the dataset**
 
-The dataset contains recordings of driving behavior in Track 1 of Udacity's Simulator Environment. 
+The dataset can be obtained by running the Simulator in Training Mode and recording the driving. The dataset used here contains recordings of driving behavior in Track 1 of Udacity's Simulator Environment. 
 
 The dataset contains the following features of the driving behavior at a given time instant:
 
@@ -116,7 +115,7 @@ Track 2 is a difficult track and posed challenges in collecting good driving beh
 
 ![Challenging Track 2](screenshots/track2driving.png "Driving on the Challenging Track 2")
 
-In order to use better quality data for training the Deep Neural Network Model, the default dataset provided by Udacity under `data/` directory was used rather than my personal driving behavior. 
+In order to use better quality data for training the Deep Neural Network Model, the default dataset provided by Udacity under `data/` directory (not included in this repository) was used rather than my personal driving behavior. 
 
 ## **2. Data Preprocessing**
 ### **2.1. Data Augmentation**
@@ -194,8 +193,8 @@ The `drive.py` script is used to run the Autonomous Mode of the Simulator based 
 
 The videos from the front-facing cameras were generated using the `video.py` script and are included as:
 
-* `video1.mp4` based on the data in `run1/` directory
-* `video2.mp4` based on the data in `track1/` directory 
+* `video1.mp4` based on the data in `run1.zip` file
+* `video2.mp4` based on the data in `track1.zip` file 
 
 Some images from the test run are included below: 
 
