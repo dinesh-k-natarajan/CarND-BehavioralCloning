@@ -1,6 +1,10 @@
 
 # Recorded Data
 mydrivingdata/
+data/
+run1/
+track1/
+data.zip
 
 # YouTube Video
 AutonomousMode_Track1.mp4
