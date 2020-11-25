@@ -143,7 +143,7 @@ According to NVIDIA's model, the image inputs to the Convolutional Neural Networ
 
 ## **3. Model Architecture**
 
-The Model Arhcitecture is based on NVIDIA's [End-to-End Learning for Self-Driving Cars](https://arxiv.org/pdf/1604.07316v1.pdf) which *maps raw pixels from a single front-facing camera directly to steering commands.*
+The Model Architecture is based on NVIDIA's [End-to-End Learning for Self-Driving Cars](https://arxiv.org/pdf/1604.07316v1.pdf) which *maps raw pixels from a single front-facing camera directly to steering commands.*
 
 The Model Architecture from their paper is shown in the image below:
 
